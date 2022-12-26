@@ -16,7 +16,7 @@ document.querySelector("#login-loader").style.display = "block"
     }
 try {
 
-    const res = await fetch("https://rich-gray-dolphin-hat.cyclic.app/seller/login", {
+    const res = await fetch("https://adventurous-pike-hat.cyclic.app/seller/login", {
         method: "POST",
         body: JSON.stringify(sellersignup),
         headers: {

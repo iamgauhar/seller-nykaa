@@ -16,7 +16,7 @@ document.querySelector("#logout").addEventListener("click", ()=>{
 let slid = localStorage.getItem("sellerid")
 const totalProducts = async()=>{
     try {
-        let res = await fetch(`https://rich-gray-dolphin-hat.cyclic.app/products/sellerpd/${slid}`, {
+        let res = await fetch(`https://adventurous-pike-hat.cyclic.app/products/sellerpd/${slid}`, {
             
             headers:{
                 "Authorization": `Bearer ${localStorage.getItem("sltoken")}`
@@ -90,7 +90,7 @@ const appendData = (data)=>{
 
 let deleteProduct = async(id)=>{
     try {
-        const response = await fetch(`https://rich-gray-dolphin-hat.cyclic.app/products/delete/${id}`, {
+        const response = await fetch(`https://adventurous-pike-hat.cyclic.app/products/delete/${id}`, {
             method: "DELETE",
             headers: {
                 "Authorization": `Bearer ${localStorage.getItem("sltoken")}`

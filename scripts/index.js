@@ -15,7 +15,7 @@ document.querySelector("#logout").addEventListener("click", ()=>{
 })
 const totalProducts = async()=>{
     try {
-        let res = await fetch(`https://rich-gray-dolphin-hat.cyclic.app/products/sellerpd/${slid}`, {
+        let res = await fetch(`https://adventurous-pike-hat.cyclic.app/products/sellerpd/${slid}`, {
             
             headers:{
                 "Authorization": `Bearer ${token}`

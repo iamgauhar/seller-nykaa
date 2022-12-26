@@ -38,7 +38,7 @@ document.querySelector("form").addEventListener("submit", async(e)=>{
     console.log(data);
 
     try {
-        const res = await fetch("https://rich-gray-dolphin-hat.cyclic.app/products/add", {
+        const res = await fetch("https://adventurous-pike-hat.cyclic.app/products/add", {
             method: "POST",
             body: JSON.stringify(data),
             headers:{

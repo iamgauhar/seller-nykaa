@@ -17,7 +17,7 @@ document.querySelector("#logout").addEventListener("click", ()=>{
 let eid = localStorage.getItem("ProductID")
 console.log(eid);
 const getvalue = async(eid)=>{
-    const res = await fetch(`https://rich-gray-dolphin-hat.cyclic.app/products/productid/${eid}`, {
+    const res = await fetch(`https://adventurous-pike-hat.cyclic.app/products/productid/${eid}`, {
         headers:{ 
            Authorization: `Beare ${localStorage.getItem("sltoken")}`
         }
@@ -58,7 +58,7 @@ document.querySelector("form").addEventListener("submit", async(e)=>{
     console.log(data);
 
     try {
-        const res = await fetch(`https://rich-gray-dolphin-hat.cyclic.app/products/edit/${eid}`, {
+        const res = await fetch(`https://adventurous-pike-hat.cyclic.app/products/edit/${eid}`, {
             method: "PATCH",
             body: JSON.stringify(data),
             headers:{
